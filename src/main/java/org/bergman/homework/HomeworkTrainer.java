@@ -85,9 +85,9 @@ public class HomeworkTrainer {
 			driver = GraphDatabase.driver(url, AuthTokens.basic(user, pwd), Config.defaultConfig());
 			
 			// Initialize a new round
-			/*try (var session = driver.session(SessionConfig.forDatabase(db))) {
+			try (var session = driver.session(SessionConfig.forDatabase(db))) {
 				session.executeWriteWithoutResult(tx -> tx.run(new Query(QUERY_SETUP)).consume());
-			}*/
+			}
 			
 			// Ask all available questions until we are out of questions to ask
 			int questions = 0;
