@@ -101,7 +101,7 @@ public class HomeworkTrainer {
 						System.out.println("Exam over");
 						System.out.println("You got " + correctAnswers + " of " + questions);
 						if (correctAnswers > 0) {
-							System.out.println("Your average score (1-3) of the correct answers were: " +
+							System.out.println("Your average score (1-3) of the correct answers was: " +
 									String.format("%.2f", (double)totalScore/correctAnswers));
 						}
 						break;
